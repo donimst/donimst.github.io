@@ -24,8 +24,8 @@
             <div class="container">
               <p><i class="fa fa-user fa-fw margin-right large-font text-blue"></i>22 years old</p>
               <p><i class="fa fa-briefcase fa-fw margin-right large-font text-blue"></i>Junior Android Developer</Prog></p>
-              <p><i class="fa fa-phone fa-fw margin-right large-font text-blue"></i>+62-822-8831-1123</p>
-              <p><i class="fa fa-envelope fa-fw margin-right large-font text-blue"></i>donny.md17@gmail.com</p>
+              <p onclick="sendChat();"><i class="fa fa-phone fa-fw margin-right large-font text-blue"></i>+62-822-8831-1123</p>
+              <p onclick="sendMail();"><i class="fa fa-envelope fa-fw margin-right large-font text-blue"></i>donny.md17@gmail.com</p>
               <p><i class="fa fa-home fa-fw margin-right large-font text-blue"></i>Tanjungpinang, Indonesia</p>
               <hr>
             </div>
@@ -94,6 +94,15 @@
       <a href="https://www.linkedin.com/in/doni-mustasar" class="fa fa-linkedin hover-opacity xxlarge-font"></a>
       <p><a href="https://donimst.github.io" target="_blank">Doni Mustasar</a> &copy;2019</p>
     </footer>
+
+    <script>
+      function sendMail(){
+        window.location = "mailto:donny.md17@gmail.com";
+      }
+      function sendChat(){
+        window.location = "https://api.whatsapp.com/send?phone=6282288311123";
+      }
+    </script>
   
   </body>
 </html>
