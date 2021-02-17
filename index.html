@@ -11,18 +11,17 @@
     <script>
       window.onload = function(){
         document.getElementById("age").innerHTML = calculate_age(new Date(1997, 5, 5));
-        
-        function sendMail(){
-          window.location = "mailto:donny.md17@gmail.com";
-        }
-        function sendChat(){
-          window.location = "https://api.whatsapp.com/send?phone=6282288311123";
-        }
         function calculate_age(dob) { 
           var diff_ms = Date.now() - dob.getTime();
           var age_dt = new Date(diff_ms);
           return Math.abs(age_dt.getUTCFullYear() - 1970);
         }
+      }
+      function sendMail(){
+        window.location = "mailto:donny.md17@gmail.com";
+      }
+      function sendChat(){
+        window.location = "https://api.whatsapp.com/send?phone=6282288311123";
       }
     </script>
 
